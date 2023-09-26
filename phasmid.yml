@@ -1,32 +1,32 @@
 base_model: microsoft/phi-1_5
 base_model_config: microsoft/phi-1_5
-model_type: AutoModelForCausalLM
+model_type: MixFormerSequentialForCausalLM
 tokenizer_type: AutoTokenizer
 is_llama_derived_model: false
 trust_remote_code: true
 
 load_in_8bit: false
-load_in_4bit: true
+load_in_4bit: false
 strict: false
 
 datasets:
-  - path: SE6446/Pippa_Alpaca
-    type: alpaca_chat
+  - path: Open-Orca/OpenOrca
+    type: alpaca_w_system.load_open_orca
 
 dataset_prepared_path: last_run_prepared
 val_set_size: 0.05
 output_dir: ./phi-sft-out
 
-sequence_len: 1024
-sample_packing: false  # not CURRENTLY compatible with LoRAs
+sequence_len: 2048
+sample_packing: true
 pad_to_sequence_len:
 
-adapter: qlora
+adapter:
 lora_model_dir:
-lora_r: 64
-lora_alpha: 32
-lora_dropout: 0.05
-lora_target_linear: true
+lora_r:
+lora_alpha:
+lora_dropout:
+lora_target_linear:
 lora_fan_in_fan_out:
 
 wandb_project:
