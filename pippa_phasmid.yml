@@ -11,9 +11,9 @@ strict: false
 
 datasets:
   - path: SE6446/Pippa_Alpaca
-    type: alpaca_chat
+    type: gpteacher
 
-dataset_prepared_path:
+dataset_prepared_path: 
 val_set_size: 0.05
 output_dir: ./phi-sft-out
 
