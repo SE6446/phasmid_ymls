@@ -10,7 +10,7 @@ load_in_4bit: true
 strict: false
 
 datasets:
-  - path: Xilabs/PIPPA-alpaca
+  - path: SE6446/Pippa_Alpaca
     type: alpaca_chat
 
 dataset_prepared_path: last_run_prepared
