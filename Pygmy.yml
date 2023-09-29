@@ -10,8 +10,12 @@ load_in_4bit: false
 strict: false
 
 datasets:
-  - path: SE6446/Pippa_Alpaca
-    type: alpaca_chat
+  - path: SE6446/Pippa-metharme
+    type: metharme
+
+hub_model_id: SE6446/Pygmy
+hub_strategy: checkpoint
+use_auth_token: true
 dataset_prepared_path:
 val_set_size: 0.01
 output_dir: ./lora-out
