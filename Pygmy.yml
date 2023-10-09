@@ -63,7 +63,7 @@ eval_steps: 20
 eval_table_size: 5
 save_steps:
 debug:
-deepspeed: /deepseed/zero1.json
+deepspeed:
 weight_decay: 0.0
 fsdp:
 fsdp_config:
