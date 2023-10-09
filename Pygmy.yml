@@ -11,7 +11,7 @@ strict: false
 
 datasets:
   - path: SE6446/lmsys_1m_sharegpt
-    type: sharegpt.load_role
+    type: sharegpt
 
 hub_model_id: SE6446/Pygmy
 hub_strategy: checkpoint
