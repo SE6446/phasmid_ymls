@@ -10,8 +10,9 @@ load_in_4bit: false
 strict: false
 
 datasets:
-  - path: SE6446/lmsys_1m_sharegpt
-    type: sharegpt
+  - path: PygmalionAI/PIPPA
+    name: pippa_metharme
+    type: metharme
 
 hub_model_id: SE6446/Pygmy
 hub_strategy: checkpoint
