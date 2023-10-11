@@ -13,7 +13,7 @@ datasets:
   - path: SE6446/Pippa-metharme
     type: metharme
 
-hub_model_id: SE6446/Phasmid-1_5-V0_1
+hub_model_id: SE6446/Phasmid-1_5-V0_2
 hub_strategy: every_save
 use_auth_token: true
 dataset_prepared_path: 
