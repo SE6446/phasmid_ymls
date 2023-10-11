@@ -10,7 +10,7 @@ load_in_4bit: false
 strict: false
 
 datasets:
-  - path: SE6446/Pippa_metharme
+  - path: SE6446/Pippa-metharme
     type: metharme
 
 hub_model_id: SE6446/Pygmy
