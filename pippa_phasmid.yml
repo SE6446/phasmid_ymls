@@ -11,7 +11,7 @@ strict: false
 
 datasets:
   - path: SE6446/Pippa_ShareGPT_Name
-    type: sharegpt
+    type: pygmalion
 
 hub_model_id: SE6446/Phasmid-1_5-V0_2
 hub_strategy: every_save
