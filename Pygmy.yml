@@ -10,9 +10,7 @@ load_in_4bit: false
 strict: false
 
 datasets:
-  - path: SE6446/lmsys_1m_pygmalion
-    type: pygmalion
-  - path: SE6446/PIPPA_pygmalion_named
+  - path: SE6446/lmsys_pippa_pyg_named
     type: pygmalion
 
 hub_model_id: SE6446/Pygmy
