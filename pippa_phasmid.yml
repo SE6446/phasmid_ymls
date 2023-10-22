@@ -10,10 +10,10 @@ load_in_4bit: false
 strict: false
 
 datasets:
-  - path: SE6446/Pippa_ShareGPT_Name
+  - path: SE6446/lmsys_pippa_pyg_named_smort
     type: pygmalion
 
-hub_model_id: SE6446/Phasmid-1_5-V0_2
+hub_model_id: SE6446/Phasmid-1_5-V0_3
 hub_strategy: every_save
 use_auth_token: true
 dataset_prepared_path: 
