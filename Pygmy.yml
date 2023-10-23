@@ -1,5 +1,5 @@
-base_model: PY007/TinyLlama-1.1B-intermediate-step-240k-503b
-base_model_config: PY007/TinyLlama-1.1B-intermediate-step-240k-503b
+base_model: PY007/TinyLlama-1.1B-intermediate-step-480k-1T
+base_model_config: PY007/TinyLlama-1.1B-intermediate-step-480k-1T
 
 model_type: LlamaForCausalLM
 tokenizer_type: LlamaTokenizer
@@ -10,10 +10,10 @@ load_in_4bit: false
 strict: false
 
 datasets:
-  - path: SE6446/lmsys_pippa_pyg_named
+  - path: SE6446/Ult-Conv-518K
     type: pygmalion
 
-hub_model_id: SE6446/Pygmy
+hub_model_id: SE6446/Pygmy_V2
 hub_strategy: every_save
 use_auth_token: true
 dataset_prepared_path:
