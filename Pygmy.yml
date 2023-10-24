@@ -1,5 +1,4 @@
-base_model: PY007/TinyLlama-1.1B-intermediate-step-480k-1T
-base_model_config: PY007/TinyLlama-1.1B-intermediate-step-480k-1T
+base_model: PY007/TinyLlama-1.1B-step-50K-105b
 
 model_type: LlamaForCausalLM
 tokenizer_type: LlamaTokenizer
@@ -12,10 +11,6 @@ strict: false
 datasets:
   - path: SE6446/Ult-Conv-518K
     type: pygmalion
-
-hub_model_id: SE6446/Pygmy_V2
-hub_strategy: every_save
-use_auth_token: true
 dataset_prepared_path:
 val_set_size: 0.01
 output_dir: ./lora-out
@@ -38,8 +33,8 @@ wandb_run_id:
 wandb_log_model:
 
 gradient_accumulation_steps: 4
-micro_batch_size: 20
-num_epochs: 5
+micro_batch_size: 2
+num_epochs: 3
 optimizer: adamw_bnb_8bit
 lr_scheduler: cosine
 learning_rate: 0.0004
@@ -60,7 +55,7 @@ flash_attention: true
 
 warmup_steps: 10
 eval_steps: 20
-eval_table_size: 5
+eval_table_size:
 save_steps:
 debug:
 deepspeed:
