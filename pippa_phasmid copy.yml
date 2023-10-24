@@ -10,7 +10,7 @@ load_in_4bit: false
 strict: false
 
 datasets:
-  - path: SE6446/Uber_conv_95K
+  - path: SE6446/Ult-Conv-518K
     type: pygmalion
 
 hub_model_id: SE6446/Phasmid-1_5-V0_4
@@ -40,7 +40,7 @@ wandb_log_model:
 
 gradient_accumulation_steps: 1
 micro_batch_size: 1
-num_epochs: 2
+num_epochs: 4
 optimizer: adamw_torch
 adam_beta2: 0.95
 adam_epsilon: 0.00001
