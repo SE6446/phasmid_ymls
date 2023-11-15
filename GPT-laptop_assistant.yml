@@ -9,6 +9,8 @@ datasets:
   - path: SE6446/no_robots_metharme
     type: pygmalion
 dataset_prepared_path:
+hub_model_id: SE6446/GPT-medium-assistant
+hub_strategy: epoch
 val_set_size: 0.05
 adapter: qlora
 lora_model_dir:
