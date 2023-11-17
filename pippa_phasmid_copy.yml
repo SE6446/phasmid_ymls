@@ -1,5 +1,5 @@
-base_model: SE6446/Phasmid-1_5-V0_3
-base_model_config: SE6446/Phasmid-1_5-V0_3
+base_model: microsoft/phi-1_5
+base_model_config: microsoft/phi-1_5
 model_type: MixFormerSequentialForCausalLM
 tokenizer_type: AutoTokenizer
 is_llama_derived_model: false
@@ -10,10 +10,10 @@ load_in_4bit: false
 strict: false
 
 datasets:
-  - path: SE6446/Uber_conv_95K
-    type: pygmalion
+  - path: SE6446/Pippa_alpaca_completion
+    type: completion
 
-hub_model_id: SE6446/Phasmid-1_5-V0_4
+hub_model_id: SE6446/Phasmid-1_5-V0_5
 hub_strategy: every_save
 use_auth_token: true
 dataset_prepared_path: 
@@ -40,7 +40,7 @@ wandb_log_model:
 
 gradient_accumulation_steps: 1
 micro_batch_size: 1
-num_epochs: 2
+num_epochs: 4
 optimizer: adamw_torch
 adam_beta2: 0.95
 adam_epsilon: 0.00001
