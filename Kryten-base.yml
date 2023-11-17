@@ -42,6 +42,9 @@ warmup_steps: 10
 eval_steps: 0.05
 save_steps:
 debug:
+hub_model_id: SE6446/Kryten-3.2b-proofofconcept
+hub_strategy: every_save
+use_auth_token: true
 deepspeed:
 weight_decay: 0.1
 fsdp:
