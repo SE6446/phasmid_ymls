@@ -1,6 +1,5 @@
 base_model: microsoft/phi-2
-base_model_config: microsoft/phi-2
-model_type: MixFormerSequentialForCausalLM
+model_type: PhiForCausalLM
 tokenizer_type: AutoTokenizer
 is_llama_derived_model: false
 trust_remote_code: true
@@ -10,15 +9,15 @@ load_in_4bit: false
 strict: false
 
 datasets:
-  - path: SE6446/Pippa_alpaca_completion
+  - path: SE6446/phasmid-2_DS
     type: completion
 
-hub_model_id: SE6446/Phasmid-2-V0_1
+hub_model_id: SE6446/Phasmid-1_5-V0_5
 hub_strategy: every_save
 use_auth_token: true
-dataset_prepared_path: 
+dataset_prepared_path: /phasmid-2-ds-path
 val_set_size: 0.05
-output_dir: ./phi-sft-out
+output_dir: ./phasmid-sft-out
 
 sequence_len: 2048
 sample_packing: true
@@ -32,10 +31,10 @@ lora_dropout:
 lora_target_linear:
 lora_fan_in_fan_out:
 
-wandb_project:
-wandb_entity:
+wandb_project: Phasmid-2
+wandb_entity: se6446
 wandb_watch:
-wandb_run_id:
+wandb_name: Run-1
 wandb_log_model:
 
 gradient_accumulation_steps: 1
@@ -46,7 +45,7 @@ adam_beta2: 0.95
 adam_epsilon: 0.00001
 max_grad_norm: 1.0
 lr_scheduler: cosine
-learning_rate: 0.0004
+learning_rate: 0.0003
 
 train_on_inputs: false
 group_by_length: true
@@ -63,8 +62,8 @@ xformers_attention:
 flash_attention:
 
 warmup_steps: 100
-eval_steps: 0.05
-save_steps:
+evals_per_epoch: 4
+saves_per_epoch: 1
 debug:
 deepspeed:
 weight_decay: 0.1
