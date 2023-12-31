@@ -9,10 +9,10 @@ load_in_4bit: false
 strict: false
 
 datasets:
-  - path: SE6446/phasmid-2_DS
+  - path: SE6446/Phaz-2
     type: completion
 
-hub_model_id: SE6446/Phasmid-1_5-V0_5
+hub_model_id: SE6446/Phasmid-2
 hub_strategy: every_save
 use_auth_token: true
 dataset_prepared_path: /phasmid-2-ds-path
@@ -34,7 +34,7 @@ lora_fan_in_fan_out:
 wandb_project: Phasmid-2
 wandb_entity: se6446
 wandb_watch:
-wandb_name: Run-2
+wandb_name: Run-1-minimized
 wandb_log_model:
 
 gradient_accumulation_steps: 1
