@@ -12,7 +12,7 @@ datasets:
   - path: SE6446/SE6446_instruct_pile
     type: completion
 
-hub_model_id: SE6446/Phasmid-2
+hub_model_id: SE6446/Phasmid-2_v2
 hub_strategy: every_save
 use_auth_token: true
 dataset_prepared_path: /phasmid-2-ds-path
