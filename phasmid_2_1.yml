@@ -9,7 +9,7 @@ load_in_4bit: false
 strict: false
 
 datasets:
-  - path: SE6446/SE6446_instruct_pile
+  - path: SE6446/SE6446_phasmid_ds
     type: completion
 
 hub_model_id: SE6446/Phasmid-2_v2
